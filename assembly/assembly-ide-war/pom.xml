@@ -12,7 +12,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>plugin-json-assembly-parent</artifactId>
-        <groupId>archetype.it</groupId>
+        <groupId>org.eclipse.che.sample</groupId>
         <version>6.9.0-SNAPSHOT</version>
     </parent>
     <artifactId>assembly-ide-war</artifactId>
@@ -33,7 +33,7 @@
             <type>gwt-lib</type>
         </dependency>
         <dependency>
-            <groupId>archetype.it</groupId>
+            <groupId>org.eclipse.che.sample</groupId>
             <artifactId>plugin-json-ide</artifactId>
             <type>gwt-lib</type>
         </dependency>
