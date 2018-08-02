@@ -12,7 +12,7 @@
     <parent>
         <artifactId>maven-depmgt-pom</artifactId>
         <groupId>org.eclipse.che.depmgt</groupId>
-        <version>6.100.0</version>
+        <version>6.100.1</version>
     </parent>
     <groupId>archetype.it</groupId>
     <artifactId>plugin-myjson</artifactId>
@@ -34,7 +34,7 @@
         <url>https://github.com/che-samples/che-plugin-json</url>
     </scm>
     <properties>
-        <che.version>6.100.0</che.version>
+        <che.version>6.100.1</che.version>
     </properties>
     <dependencyManagement>
         <dependencies>
