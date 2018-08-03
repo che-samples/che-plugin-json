@@ -14,7 +14,7 @@
         <groupId>org.eclipse.che.depmgt</groupId>
         <version>6.10.0-SNAPSHOT</version>
     </parent>
-    <groupId>archetype.it</groupId>
+    <groupId>org.eclipse.che.sample</groupId>
     <artifactId>plugin-myjson</artifactId>
     <version>6.10.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -39,42 +39,42 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>archetype.it</groupId>
+                <groupId>org.eclipse.che.sample</groupId>
                 <artifactId>assembly-ide-war</artifactId>
                 <version>${project.version}</version>
                 <type>war</type>
             </dependency>
             <dependency>
-                <groupId>archetype.it</groupId>
+                <groupId>org.eclipse.che.sample</groupId>
                 <artifactId>assembly-wsagent-server</artifactId>
                 <version>${project.version}</version>
                 <type>tar.gz</type>
             </dependency>
             <dependency>
-                <groupId>archetype.it</groupId>
+                <groupId>org.eclipse.che.sample</groupId>
                 <artifactId>assembly-wsagent-war</artifactId>
                 <version>${project.version}</version>
                 <type>war</type>
             </dependency>
             <dependency>
-                <groupId>archetype.it</groupId>
+                <groupId>org.eclipse.che.sample</groupId>
                 <artifactId>assembly-wsmaster-war</artifactId>
                 <version>${project.version}</version>
                 <type>war</type>
             </dependency>
             <dependency>
-                <groupId>archetype.it</groupId>
+                <groupId>org.eclipse.che.sample</groupId>
                 <artifactId>plugin-json-ide</artifactId>
                 <version>${project.version}</version>
                 <type>gwt-lib</type>
             </dependency>
             <dependency>
-                <groupId>archetype.it</groupId>
+                <groupId>org.eclipse.che.sample</groupId>
                 <artifactId>plugin-json-server</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>archetype.it</groupId>
+                <groupId>org.eclipse.che.sample</groupId>
                 <artifactId>plugin-json-shared</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -89,28 +89,11 @@
     </dependencyManagement>
     <repositories>
         <repository>
-            <id>codenvy-public-repo</id>
-            <name>codenvy public</name>
-            <url>https://maven.codenvycorp.com/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>codenvy-public-snapshots-repo</id>
-            <name>codenvy public snapshots</name>
-            <url>https://maven.codenvycorp.com/content/repositories/codenvy-public-snapshots/</url>
+            <id>ossrh</id>
+            <name>central public snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
     </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>codenvy-public-repo</id>
-            <name>codenvy public</name>
-            <url>https://maven.codenvycorp.com/content/groups/public/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>codenvy-public-snapshots-repo</id>
-            <name>codenvy public snapshots</name>
-            <url>https://maven.codenvycorp.com/content/repositories/codenvy-public-snapshots/</url>
-        </pluginRepository>
-    </pluginRepositories>
     <build>
         <plugins>
             <plugin>

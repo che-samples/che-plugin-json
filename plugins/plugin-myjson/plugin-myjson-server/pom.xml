@@ -12,7 +12,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>plugin-json-parent</artifactId>
-        <groupId>archetype.it</groupId>
+        <groupId>org.eclipse.che.sample</groupId>
         <version>6.10.0-SNAPSHOT</version>
     </parent>
     <artifactId>plugin-json-server</artifactId>
@@ -43,7 +43,7 @@
             <artifactId>che-core-commons-inject</artifactId>
         </dependency>
         <dependency>
-            <groupId>archetype.it</groupId>
+            <groupId>org.eclipse.che.sample</groupId>
             <artifactId>plugin-json-shared</artifactId>
         </dependency>
     </dependencies>
@@ -54,7 +54,7 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <configuration>
                     <ignoredUnusedDeclaredDependencies>
-                        <param>archetype.it:plugin-json-shared</param>
+                        <param>org.eclipse.che.sample:plugin-json-shared</param>
                     </ignoredUnusedDeclaredDependencies>
                 </configuration>
             </plugin>
